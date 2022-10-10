@@ -1,0 +1,22 @@
+list = []
+n = int(input())
+
+for i in range(0, n):
+    command = input()
+    if command.startswith("insert"):
+        a = command.split()
+        list.insert(int(a[1]), int(a[2]))
+    elif command == "print":
+        print(list)
+    elif command.startswith("remove"):
+        a = command.split()
+        list.remove(int(a[1]))
+    elif command.startswith("append"):
+        a = command.split()
+        list.append(int(a[1]))
+    elif command == "sort":
+        list.sort()
+    elif command == "pop":
+        list.pop()
+    elif command == "reverse":
+        list.reverse()

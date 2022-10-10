@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+
+iDiv = a // b
+print(str(iDiv))
+
+div = a / b
+print(str(div))

@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+
+sum = a + b
+print(str(sum))
+
+diff = a - b
+print(str(diff))
+
+prod = a * b
+print(str(prod))

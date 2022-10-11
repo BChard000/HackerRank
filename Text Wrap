@@ -1,0 +1,22 @@
+import textwrap
+
+def wrap(string, max_width):
+    wrapper = textwrap.TextWrapper(width=max_width)
+    string = wrapper.fill(text=string)
+    return string
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
+    
+
+''' Solution without using a function:
+string = input()
+width = int(input())
+
+for i in range(0, len(string)):
+    print(string[i], end="")
+    if ((i + 1) % width == 0):
+        print()
+'''

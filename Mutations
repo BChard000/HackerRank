@@ -1,0 +1,22 @@
+def mutate_string(string, position, character):
+    listS = list(string)
+    listS[position] = character
+    return ''.join(listS)
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
+    
+    
+''' Solution without using a function:
+string = input()
+listS = list(string)
+
+command = input()
+listC = command.split()
+
+listS[int(listC[0])] = listC[1]
+print(''.join(listS))
+'''

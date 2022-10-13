@@ -1,0 +1,6 @@
+# Pypy 3
+n = int(input())
+t = tuple(map(int, input().split()))
+
+hashT = hash(t)
+print(hashT)

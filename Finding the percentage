@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    studentMarks = {}
+    for i in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        studentMarks[name] = scores
+    queryName = input()
+    
+list = studentMarks.get(queryName)
+sum = 0
+for i in range(len(list)):
+    sum += list[i]
+
+average = sum / 3
+print("{:.2f}".format(average))

@@ -1,0 +1,56 @@
+s = input()
+
+# Contains an alphanumeric character
+counter = 0
+for i in range(len(s)):
+    if s[i].isalnum():
+        counter += 1
+        break
+if counter != 0:
+    print(True)
+else:
+    print(False)
+
+# Contains an alphabetical character
+counter = 0
+for i in range(len(s)):
+    if s[i].isalpha():
+        counter += 1
+        break
+if counter != 0:
+    print(True)
+else:
+    print(False)
+
+# Contains a digit
+counter = 0
+for i in range(len(s)):
+    if s[i].isdigit():
+        counter += 1
+        break
+if counter != 0:
+    print(True)
+else:
+    print(False)
+
+# Contains a lowercase character
+counter = 0
+for i in range(len(s)):
+    if s[i].islower():
+        counter += 1
+        break
+if counter != 0:
+    print(True)
+else:
+    print(False)
+
+# Contains an uppercase character
+counter = 0
+for i in range(len(s)):
+    if s[i].isupper():
+        counter += 1
+        break
+if counter != 0:
+    print(True)
+else:
+    print(False)

@@ -1,0 +1,14 @@
+X = int(input())
+shoeSizeList = list(map(int, input().split()))
+N = int(input())
+
+moneyEarned = 0
+for i in range(N):
+    shoeSizeAndPrice = list(map(int, input().split()))
+    for j in range(X):
+        if shoeSizeAndPrice[0] == shoeSizeList[j]:
+            moneyEarned += shoeSizeAndPrice[1]
+            del shoeSizeList[j]
+            X -= 1
+            break
+print(moneyEarned)

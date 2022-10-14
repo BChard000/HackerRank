@@ -1,0 +1,15 @@
+def solve(s):
+    s = s.strip()
+    s = s.split(" ")
+    capitalized = ""
+
+    for i in range(len(s)):
+        capitalized += s[i].capitalize() + " "
+    capitalize = capitalized.strip()
+    return capitalized
+
+
+if __name__ == '__main__':
+    s = input()
+    result = solve(s)
+    print(result)

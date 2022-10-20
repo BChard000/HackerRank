@@ -1,0 +1,23 @@
+from collections import OrderedDict
+
+
+def merge_the_tools(string, k):
+    listS = []
+    sublist = []
+    counter = 0
+    for i in range(len(string)):
+        sublist.append(string[i])
+        counter += 1
+        if counter == k:
+            listS.append(sublist)
+            sublist = []
+            counter = 0
+
+    for i in range(len(listS)):
+        merged = list(OrderedDict.fromkeys(listS[i]))
+        print("".join(merged))
+
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)

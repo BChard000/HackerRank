@@ -6,7 +6,7 @@ def solve(s):
     for i in range(len(s)):
         capitalized += s[i].capitalize() + " "
     capitalize = capitalized.strip()
-    return capitalized
+    return capitalize
 
 
 if __name__ == '__main__':

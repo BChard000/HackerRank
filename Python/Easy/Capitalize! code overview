@@ -1,0 +1,18 @@
+##########################################################################################################################
+def solve(s):
+    s = s.strip()
+    s = s.split(" ")
+    capitalized = ""
+
+First we use strip() to make sure we don't have any whitespaces after the last character. "chris alan   " => "chris alan"
+Then, split(" ") makes a list: "chris alan" => ["chris", "alan"].
+capitalized is defined as an empty string, we will need it in the future.
+
+##########################################################################################################################
+    for i in range(len(s)):
+       capitalized += s[i].capitalize() + " "
+    capitalize = capitalized.strip()
+    return capitalize
+
+We know that s = ["chris", "alan"]. Therefore, len(s) = 2.
+When the for loop is finished capitalized = "Chris Alan ", so we need to use strip() again.
